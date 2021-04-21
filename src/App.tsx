@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import logo from './assets/logo.svg'
+import Logo from '@/components/Logo'
 
 const App = () => {
   useEffect(() => {
@@ -7,7 +7,7 @@ const App = () => {
   })
   return (
     <div className='flex justify-center items-center h-screen bg-gray-700'>
-      <img src={logo} className='w-40 h-40' alt='logo' />
+      <Logo />
     </div>
   )
 }

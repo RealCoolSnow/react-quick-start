@@ -1,6 +1,6 @@
 const path = require('path')
 
-const resolve = pathUrl => path.join(__dirname, pathUrl)
+const resolve = pathUrl => path.resolve(__dirname, '.', pathUrl)
 
 module.exports = {
   style: {
