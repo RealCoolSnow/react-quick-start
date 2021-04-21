@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import Logo from '@/components/Logo'
 import { showAlert } from '@/utils/util'
-import './app.css'
 import { helloGet } from '@/service/api'
+import './index.css'
 
-const App = () => {
+const Index = () => {
   useEffect(() => {
     console.log('app created')
   })
@@ -38,4 +38,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Index

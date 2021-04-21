@@ -16,7 +16,8 @@ module.exports = {
       '@/service': resolve('src/service'),
       '@/store': resolve('src/store'),
       '@/styles': resolve('src/styles'),
-      '@/utils': resolve('src/utils')
+      '@/utils': resolve('src/utils'),
+      '@/router': resolve('src/router')
     }
   }
 }
