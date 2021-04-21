@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL: string = import.meta.env.VITE_BASE_URL?.toString() || ''
+const baseURL: string = process.env.REACT_APP_BASE_URL?.toString() || ''
 
 const service = axios.create({
   baseURL,

@@ -6,7 +6,7 @@
 
 - TypeScript
 
-- store、network - works out-of-box
+- [axios](https://github.com/axios/axios) - easy network request
 
 - [rematch](https://github.com/rematch/rematch) - easy Redux 
 
