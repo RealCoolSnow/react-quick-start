@@ -3,6 +3,7 @@ import Logo from '@/components/Logo'
 import { showAlert } from '@/utils/util'
 import { helloGet } from '@/service/api'
 import './index.css'
+import Counter from '@/components/Counter'
 
 const Index = () => {
   useEffect(() => {
@@ -22,14 +23,7 @@ const Index = () => {
     <div className='flex flex-col items-center h-screen bg-gray-700'>
       <Logo />
       <div className='bg-white w-3/4 p-4 rounded'>
-        <div
-          onClick={() => {
-            showAlert('hello')
-          }}
-          className='btn bg-green-500'
-        >
-          click me
-        </div>
+        <Counter />
         <div onClick={networkTest} className='btn bg-blue-500 mt-2'>
           Network Test
         </div>
