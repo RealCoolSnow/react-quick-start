@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL: string = process.env.REACT_APP_BASE_URL?.toString() || ''
+const baseURL: string = import.meta.env.REACT_APP_BASE_URL.toString() || ''
 
 const service = axios.create({
   baseURL,
@@ -9,18 +9,18 @@ const service = axios.create({
 })
 
 service.interceptors.request.use(
-  config => {
+  (config) => {
     config.params = {
       ...config.params
     }
     return config
   },
-  error => {
+  (error) => {
     Promise.reject(error)
   }
 )
 
-service.interceptors.response.use(response => {
+service.interceptors.response.use((response) => {
   if (response.status !== 200) return Promise.reject(response.data)
 
   return response.data
