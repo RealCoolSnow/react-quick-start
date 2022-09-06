@@ -1,8 +1,3 @@
-const path = require('path')
-const paths = require('./config/paths')
-
-const resolve = pathUrl => path.resolve(__dirname, '.', pathUrl)
-
 module.exports = {
   style: {
     postOptions: {
@@ -11,7 +6,6 @@ module.exports = {
   },
   webpack: {
     alias: {
-      '@': paths.appSrc
     }
   }
 }
