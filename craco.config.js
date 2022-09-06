@@ -1,23 +1,17 @@
 const path = require('path')
+const paths = require('./config/paths')
 
 const resolve = pathUrl => path.resolve(__dirname, '.', pathUrl)
 
 module.exports = {
   style: {
-    postcss: {
+    postOptions: {
       plugins: [require('tailwindcss'), require('autoprefixer')]
     }
   },
   webpack: {
     alias: {
-      '@/assets': resolve('src/assets'),
-      '@/components': resolve('src/components'),
-      '@/pages': resolve('src/pages'),
-      '@/service': resolve('src/service'),
-      '@/store': resolve('src/store'),
-      '@/styles': resolve('src/styles'),
-      '@/utils': resolve('src/utils'),
-      '@/router': resolve('src/router')
+      '@': paths.appSrc
     }
   }
 }
